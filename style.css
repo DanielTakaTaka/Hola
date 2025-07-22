@@ -14,7 +14,7 @@ body {
 /* Estilos para el contenedor de las letras (Hola, Aneth) */
 .contenedor-saludo-principal { /* NOTA: Asegúrate de que tu HTML tiene esta clase para el contenedor de "Hola, Aneth" */
     display: flex;
-    font-size: 6em; /* AUMENTADO: Las letras de "Hola, Aneth" serán más grandes */
+    font-size: 5em; /* AUMENTADO: Las letras de "Hola, Aneth" serán más grandes */
     font-weight: bold;
     position: relative;
     padding: 20px;
