@@ -1,29 +1,32 @@
+/* Agrega este @import al principio de tu archivo style.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 /* Estilos generales para el cuerpo de la página */
 body {
     margin: 0;
     height: 100vh;
     display: flex;
-    flex-direction: column; /* Alinea los elementos verticalmente */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: #87CEFA; /* Fondo celeste sólido */
-    font-family: sans-serif; /* Fuente más legible */
+    background-color: #87CEFA;
+    font-family: sans-serif;
 }
 
-/* Estilos para el contenedor de las letras (Hola, Aneth) */
-.contenedor-saludo-principal { /* NOTA: Asegúrate de que tu HTML tiene esta clase para el contenedor de "Hola, Aneth" */
+/* Estilos para el contenedor de las letras */
+.contenedor-saludo-principal {
     display: flex;
-    font-size: 6em; /* AUMENTADO: Las letras de "LIZ!" serán más grandes */
+    font-size: 6em;
     font-weight: bold;
     position: relative;
     padding: 20px;
-    margin-bottom: 30px; /* Espacio entre los dos elementos */
+    margin-bottom: 30px;
 }
 
 /* Estilos para cada letra (efecto burbuja y color individual) */
 .letra, .letro-espacio {
-    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente de la burbuja */
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     padding: 0.15em 0.3em;
     margin: 0 0.08em;
@@ -43,11 +46,10 @@ body {
 }
 
 /* Colores individuales para cada letra */
-.letra:nth-child(1) { background-color: rgba(255, 99, 71, 0.6); } /* H */
-.letra:nth-child(2) { background-color: rgba(100, 149, 237, 0.6); } /* o */
-.letra:nth-child(3) { background-color: rgba(60, 179, 113, 0.6); } /* l */
-.letra:nth-child(4) { background-color: rgba(255, 215, 0, 0.6); } /* a */
-
+.letra:nth-child(1) { background-color: rgba(255, 99, 71, 0.6); }
+.letra:nth-child(2) { background-color: rgba(100, 149, 237, 0.6); }
+.letra:nth-child(3) { background-color: rgba(60, 179, 113, 0.6); }
+.letra:nth-child(4) { background-color: rgba(255, 215, 0, 0.6); }
 
 /* Retraso en la animación para cada letra */
 .letra:nth-child(1) { animation-delay: 0s; }
@@ -73,8 +75,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%; /* REDUCIDO: Ancho para la burbuja de la frase */
-    max-width: 500px; /* REDUCIDO: Ancho máximo */
+    width: 70%;
+    max-width: 500px;
     box-sizing: border-box;
     margin-top: 20px;
 }
@@ -92,21 +94,21 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     animation: flotarSuave 6s ease-in-out infinite alternate;
-    font-family: 'Georgia', serif; /* Añadido */
-    font-weight: bold; /* Añadido */
+    font-family: 'Montserrat', sans-serif; /* Nuevo tipo de letra */
+    font-weight: bold;
 }
 
 /* Animación de flotar suave para la frase de oportunidad */
 @keyframes flotarSuave {
     0% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-10px) rotate(0.5deg); } /* Sube un poco menos y gira sutilmente */
+    50% { transform: translateY(-10px) rotate(0.5deg); }
     100% { transform: translateY(0) rotate(0deg); }
 }
 
 /* Media query para pantallas más pequeñas (adaptabilidad) */
 @media (max-width: 768px) {
     .contenedor-saludo-principal {
-        font-size: 4.5em; /* Ajuste para móviles, "Hola, Aneth" un poco más grande */
+        font-size: 4.5em;
         padding: 10px;
         margin-bottom: 20px;
     }
@@ -116,13 +118,12 @@ body {
     }
 
     .contenedor-frase-nueva {
-        width: 90%; /* Ocupa más ancho en móviles */
+        width: 90%;
     }
     .frase-oportunidad {
-        font-size: 1em; /* Ajuste para móviles, la frase más pequeña */
+        font-size: 1em;
         padding: 10px 20px;
-        border-radius: 15px; /* Bordes menos pronunciados en móviles */
+        border-radius: 15px;
     }
 }
-
 
